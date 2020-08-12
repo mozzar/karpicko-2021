@@ -69,12 +69,7 @@ export default {
       drawer: false,
       main: { title: "Karpicko 2020", id: "#hero" },
       items: [
-        { title: "Zaproszenie", id: "#invitation" },
-        { title: "Rejestracja", id: "#registration" },
-        { title: "Harmonogram", id: "#agenda" },
-        { title: "Kontakt", id: "" },
-        { title: "Zakwaterowanie", id: "" },
-        { title: "Partnerzy", id: "" }
+        { title: "Kontakt", id: "#contact" },
       ]
     };
   }
