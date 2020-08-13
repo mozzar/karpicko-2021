@@ -9,7 +9,7 @@
           <img src="@/assets/daniel_mokrzan.jpg" />
         </v-avatar>
       </v-card-text>
-      <v-card-title primary-title class="layout justify-center">
+      <v-card-title primary-title class="layout justify-center font-weight-bold">
         <div class="headline text-xs-center">{{ title }}</div>
       </v-card-title>
       <v-card-text>
