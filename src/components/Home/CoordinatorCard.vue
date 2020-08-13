@@ -6,7 +6,7 @@
       <!--      </v-card-text>-->
       <v-card-text class="text-xs-center">
         <v-avatar size="300">
-          <img src="@/assets/daniel_mokrzan.jpg" />
+          <img :src="require(`@/assets/crew/${avatar}`)" />
         </v-avatar>
       </v-card-text>
       <v-card-title primary-title class="layout justify-center font-weight-bold">
@@ -26,7 +26,7 @@ export default {
   name: "CoordinatorCard",
   props: {
     title: String,
-    text: String,
+    text: {},
     avatar: String
   }
 };

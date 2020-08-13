@@ -11,12 +11,12 @@
         <coordinator-card
           :title="daniel.title"
           :text="daniel.text"
-          :icon="daniel.avatar"
+          :avatar="daniel.avatar"
         />
         <coordinator-card
           :title="oskar.title"
           :text="oskar.text"
-          :icon="oskar.avatar"
+          :avatar="oskar.avatar"
         />
       </v-row>
       <v-row class="mt-10" align="start" justify="center" no-gutters>
@@ -30,7 +30,7 @@
               v-for="(item, index) in crew"
               :key="index"
             >
-              <crew-card :name="item.name" :faculty="item.faculty" />
+              <crew-card :name="item.name" :faculty="item.faculty" :avatar="item.avatar" />
             </v-col>
           </v-row>
         </v-col>
@@ -54,7 +54,7 @@ export default {
           phone: "+48 213 769 666",
           faculty: "WILiT"
         },
-        avatar: "@/assets/daniel_mokrzan.jpg"
+        avatar: "Daniel_M.jpg"
       },
       oskar: {
         title: "Oskar Napierała",
@@ -63,18 +63,18 @@ export default {
           phone: "+48 213 769 666",
           faculty: "WIM"
         },
-        avatar: "@/assets/daniel_mokrzan.jpg"
+        avatar: "Oskar.jpg"
       },
       crew: [
         {
           name: "Szymon Bujanowski",
           faculty: "WARiE",
-          avatar: ""
+          avatar: "Szymon.jpg"
         },
         {
           name: "Wojciech Charoński",
           faculty: "WARiE",
-          avatar: ""
+          avatar: "Wojtek_Ch.jpg"
         },
         {
           name: "Bartosz Cieślewicz",
@@ -84,7 +84,7 @@ export default {
         {
           name: "Natalia Fedko",
           faculty: "WA",
-          avatar: ""
+          avatar: "Natalka.jpg"
         },
         {
           name: "Wojciech Gindera",
@@ -104,17 +104,17 @@ export default {
         {
           name: "Bartosz Kruczyński",
           faculty: "WILiT",
-          avatar: ""
+          avatar: "Bartek_K1.jpg"
         },
         {
           name: "Klaudia Kulińska",
           faculty: "WIM",
-          avatar: ""
+          avatar: "Klaudia_K.jpg"
         },
         {
           name: "Eliza Kurkowiak",
           faculty: "WIM",
-          avatar: ""
+          avatar: "Eliza.jpg"
         },
         {
           name: "Martyna Kurz",
@@ -124,27 +124,27 @@ export default {
         {
           name: "Dagmara Maćkowiak",
           faculty: "WIZ",
-          avatar: ""
+          avatar: "Dagmara.jpg"
         },
         {
           name: "Marek Mocny",
           faculty: "WILiT",
-          avatar: ""
+          avatar: "Marek.jpg"
         },
         {
           name: "Marta Orlikowska",
           faculty: "WIŚiE",
-          avatar: ""
+          avatar: "Marta_O.jpg"
         },
         {
           name: "Mateusz Ostrowski",
           faculty: "WIiT",
-          avatar: ""
+          avatar: "Mateusz.jpg"
         },
         {
           name: "Grzegorz Otworowski",
           faculty: "WIiT",
-          avatar: ""
+          avatar: "Grzesiu.jpg"
         },
         {
           name: "Agata Pawlik",
@@ -159,7 +159,7 @@ export default {
         {
           name: "Jędrzej Smolarkiewicz",
           faculty: "WARiE",
-          avatar: ""
+          avatar: "Jedrzej.jpg"
         },
         {
           name: "Aleksandra Stróżyk",
@@ -169,22 +169,22 @@ export default {
         {
           name: "Barbara Winiarczyk",
           faculty: "WIMiFT",
-          avatar: ""
+          avatar: "Basia.jpg"
         },
         {
           name: "Piotr Woźniak",
           faculty: "WILiT",
-          avatar: ""
+          avatar: "Piotr.jpg"
         },
         {
           name: "Karolina Zapadka",
           faculty: "WILiT",
-          avatar: ""
+          avatar: "Karolina.jpg"
         },
         {
           name: "Maria Zienkiewicz",
           faculty: "WIZ",
-          avatar: ""
+          avatar: "Maria.jpg"
         }
       ]
     };
