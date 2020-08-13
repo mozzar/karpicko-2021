@@ -6,14 +6,16 @@
         @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
       <v-spacer class=" hidden-lg-and-up"></v-spacer>
-      <div class="d-flex align-center" @click="$vuetify.goTo(main.id)">
-        <v-img
-          alt="sspp-name"
-          contain
-          min-width="10"
-          src="@/assets/SSPP_white.png"
-          width="85"
-        />
+      <div class="d-flex align-center">
+        <v-btn text block x-large href="#/" @click="$vuetify.goTo(main.id)">
+          <v-img
+            alt="sspp-name"
+            contain
+            min-width="10"
+            src="@/assets/SSPP_white.png"
+            width="85"
+          />
+        </v-btn>
       </div>
       <v-spacer />
       <div v-for="(item, index) in items" :key="index">
@@ -68,9 +70,7 @@ export default {
       appTitle: "Karpicko 2020",
       drawer: false,
       main: { title: "Karpicko 2020", id: "#hero" },
-      items: [
-        { title: "Kontakt", id: "#contact" },
-      ]
+      items: [{ title: "Kontakt", id: "#contact" }]
     };
   }
 };

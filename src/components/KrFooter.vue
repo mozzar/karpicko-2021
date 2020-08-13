@@ -6,8 +6,8 @@
     />
     <v-card flat tile class="primary white--text text-center" width="100%">
       <v-card-text>
-        <v-btn v-for="icon in icons" :key="icon" class="mx-4 white--text" icon>
-          <v-icon size="24px">{{ icon }}</v-icon>
+        <v-btn v-for="icon in icons" :key="icon" class="mx-4 white--text" icon :href="icon.url" target="_blank">
+          <v-icon size="24px">{{ icon.fa }}</v-icon>
         </v-btn>
       </v-card-text>
 
@@ -31,7 +31,16 @@
 export default {
   name: "KrFooter",
   data: () => ({
-    icons: ["fab fa-facebook", "fab fa-instagram"]
+    icons: [
+      {
+        fa: "fab fa-facebook",
+        url: "https://www.facebook.com/SamorzadStudentowPolitechnikiPoznanskiej"
+      },
+      {
+        fa: "fab fa-instagram",
+        url: "https://www.instagram.com/samorzadpp/"
+      }
+    ]
   })
 };
 </script>
