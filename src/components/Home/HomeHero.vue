@@ -1,6 +1,6 @@
 <template>
   <div id="hero">
-    <v-parallax dark src="@/assets/karpicko_hero.jpg" height="700">
+    <v-parallax dark src="@/assets/karpicko_2018_sm.jpg" height="700">
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">
 <!--          <v-img src="@/assets/FUT_poznan.png" contain max-height="300"></v-img>-->
@@ -20,4 +20,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+    /*#hero {*/
+    /*    filter: brightness(70%);*/
+    /*}*/
+</style>
