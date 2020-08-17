@@ -20,7 +20,7 @@
         />
       </v-row>
 
-      <v-btn rounded outlined large href="#/crew" color="primary" class="font-weight-bold">
+      <v-btn rounded outlined large href="#/crew" color="primary" class="font-weight-bold mb-4">
         Poznaj resztę kadry
         <v-icon right>fas fa-long-arrow-alt-right</v-icon>
       </v-btn>
