@@ -5,16 +5,16 @@
       rel="stylesheet"
     />
     <v-card flat tile class="primary white--text text-center" width="100%">
-      <v-card-text>
-        <v-btn v-for="icon in icons" :key="icon" class="mx-4 white--text" icon>
-          <v-icon size="24px">{{ icon }}</v-icon>
+      <v-card-text class="mt-n1 mb-n7">
+        <v-btn v-for="icon in icons" :key="icon" class="mx-4 white--text" icon :href="icon.url" target="_blank">
+          <v-icon size="24px">{{ icon.fa }}</v-icon>
         </v-btn>
       </v-card-text>
 
       <v-card-text class="white--text pt-6">
         Niniejszy serwis znajduje się na serwerze Politechniki Poznańskiej. Za
         jego treść odpowiedzialny jest Samorząd Studentów Politechniki
-        Poznańskiej. Kontakt do administratora podany jest w zakładce Kontakt.
+        Poznańskiej.
       </v-card-text>
 
       <v-divider></v-divider>
@@ -31,7 +31,16 @@
 export default {
   name: "KrFooter",
   data: () => ({
-    icons: ["fab fa-facebook", "fab fa-instagram"]
+    icons: [
+      {
+        fa: "fab fa-facebook",
+        url: "https://www.facebook.com/SamorzadStudentowPolitechnikiPoznanskiej"
+      },
+      {
+        fa: "fab fa-instagram",
+        url: "https://www.instagram.com/samorzadpp/"
+      }
+    ]
   })
 };
 </script>
