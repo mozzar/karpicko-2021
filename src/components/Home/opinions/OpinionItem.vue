@@ -4,6 +4,8 @@
       <v-img
         :src="require(`@/assets/opinions/${src}`)"
         height="400"
+        min-width="250"
+        max-width="250"
         id="opinion_avatar"
       />
     </v-col>
