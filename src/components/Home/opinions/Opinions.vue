@@ -9,11 +9,7 @@
 
       <v-row justify="center" align="center">
         <v-col cols="12" lg="6" md="9" class="hidden-sm-and-down">
-          <v-carousel
-            show-arrows-on-hover
-            hide-delimiter-background
-            height="440"
-          >
+          <v-carousel cycle show-arrows-on-hover hide-delimiters height="440">
             <v-carousel-item v-for="(slide, index) in opinionList" :key="index">
               <opinion-item
                 :src="slide.src"
@@ -24,11 +20,7 @@
           </v-carousel>
         </v-col>
         <v-col cols="12" class="hidden-md-and-up">
-          <v-carousel
-            show-arrows-on-hover
-            hide-delimiter-background
-            height="600"
-          >
+          <v-carousel cycle show-arrows-on-hover hide-delimiters height="600">
             <v-carousel-item v-for="(slide, index) in opinionList" :key="index">
               <opinion-item-sm-and-down
                 :src="slide.src"
@@ -48,7 +40,7 @@ import OpinionItem from "@/components/Home/opinions/OpinionItem";
 import OpinionItemSmAndDown from "@/components/Home/opinions/OpinionItemSmAndDown";
 export default {
   name: "Opinions",
-  components: {OpinionItemSmAndDown, OpinionItem },
+  components: { OpinionItemSmAndDown, OpinionItem },
   data() {
     return {
       test: {
