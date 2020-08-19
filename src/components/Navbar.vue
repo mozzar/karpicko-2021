@@ -70,7 +70,10 @@ export default {
       appTitle: "Karpicko 2020",
       drawer: false,
       main: { title: "Karpicko 2020", id: "#hero" },
-      items: [{ title: "Kontakt", id: "#contact" }]
+      items: [
+        { title: "Kontakt", id: "#contact" },
+        { title: "Partnerzy", id: "#partners" }
+      ]
     };
   }
 };
