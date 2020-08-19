@@ -3,6 +3,7 @@
     <home-hero />
     <contact />
     <partners />
+    <opinions />
   </div>
 </template>
 
@@ -11,10 +12,12 @@
 import HomeHero from "../components/Home/HomeHero";
 import Contact from "../components/Home/Contact";
 import Partners from "@/components/Home/Partners";
+import Opinions from "@/components/Home/opinions/Opinions";
 
 export default {
   name: "Home",
   components: {
+    Opinions,
     Contact,
     Partners,
     HomeHero
