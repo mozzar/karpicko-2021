@@ -7,7 +7,7 @@
         </v-col>
       </v-row>
       <v-row align="center" justify="center">
-        <v-col cols="7">
+        <v-col cols="11" lg="7" md="9">
           <h2 class="headline">
             W czasie obozu nie musicie się martwić o zakwaterowanie. Każdy z Was
             będzie miał możliwość poznania życia studenckiego w akademiku, który
