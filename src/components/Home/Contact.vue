@@ -20,11 +20,17 @@
         />
       </v-row>
 
-      <v-btn rounded outlined large href="#/crew" color="primary" class="font-weight-bold">
+      <v-btn
+        rounded
+        outlined
+        x-large
+        href="#/crew"
+        color="primary"
+        class="font-weight-bold"
+      >
         Poznaj resztę kadry
         <v-icon right>fas fa-long-arrow-alt-right</v-icon>
       </v-btn>
-
     </v-container>
   </div>
 </template>
