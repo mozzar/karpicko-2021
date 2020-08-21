@@ -71,6 +71,7 @@ export default {
       drawer: false,
       main: { title: "Karpicko 2020", id: "#hero" },
       items: [
+        { title: "Zakwaterowanie", id: "#accommodation" },
         { title: "Kontakt", id: "#contact" },
         { title: "Partnerzy", id: "#partners" }
       ]
