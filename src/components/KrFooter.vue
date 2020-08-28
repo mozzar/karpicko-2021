@@ -1,12 +1,15 @@
 <template>
   <v-footer dark padless>
-    <link
-      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-      rel="stylesheet"
-    />
     <v-card flat tile class="primary white--text text-center" width="100%">
       <v-card-text class="mt-n1 mb-n7">
-        <v-btn v-for="icon in icons" :key="icon" class="mx-4 white--text" icon :href="icon.url" target="_blank">
+        <v-btn
+          v-for="(icon, index) in icons"
+          :key="index"
+          class="mx-4 white--text"
+          icon
+          :href="icon.url"
+          target="_blank"
+        >
           <v-icon size="24px">{{ icon.fa }}</v-icon>
         </v-btn>
       </v-card-text>
