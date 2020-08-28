@@ -32,10 +32,10 @@
 </template>
 
 <script>
-import PartnerCard from "@/components/Home/PartnerCard";
+import PartnerCard from "@/components/Home/partners/PartnerCard";
 export default {
   name: "Partners",
-  components: {PartnerCard},
+  components: { PartnerCard },
   data() {
     return {
       partnerList: [
@@ -68,9 +68,9 @@ export default {
         },
         {
           src: "question.png"
-        },
+        }
       ]
-    }
+    };
   }
 };
 </script>

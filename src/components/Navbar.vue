@@ -7,26 +7,39 @@
       ></v-app-bar-nav-icon>
       <v-spacer class=" hidden-lg-and-up"></v-spacer>
       <div class="d-flex align-center">
-        <v-btn text block x-large href="#/" @click="$vuetify.goTo(main.id)">
+        <v-btn
+          text
+          block
+          x-large
+          href="#/"
+          @click="() => $vuetify.goTo(main.id)"
+        >
           <v-img
             alt="sspp-name"
             contain
             min-width="10"
-            src="@/assets/SSPP_white.png"
-            width="85"
+            src="@/assets/other/logo_sspp_white_narrow.png"
+            width="90"
           />
         </v-btn>
       </div>
       <v-spacer />
       <div v-for="(item, index) in items" :key="index">
         <v-btn
+          v-if="currentRouteName == '/'"
           text
           class="hidden-md-and-down"
           elevation="0"
-          @click="$vuetify.goTo(item.id)"
+          @click="() => $vuetify.goTo(item.id)"
           >{{ item.title }}</v-btn
         >
       </div>
+      <v-btn text class="hidden-md-and-down" elevation="0" href="#/crew">
+        Kadra
+      </v-btn>
+      <v-btn text class="hidden-md-and-down" elevation="0" href="#/rules">
+        Regulamin
+      </v-btn>
     </v-app-bar>
 
     <v-navigation-drawer
@@ -37,24 +50,36 @@
       disable-resize-watcher
     >
       <v-list>
-        <v-list-item @click="$vuetify.goTo(main.id)">
+        <v-list-item href="#/" @click="() => $vuetify.goTo(main.id)">
           <div class="d-flex align-center">
-            <v-img
-              alt="Fut-name"
-              contain
-              min-width="100"
-              src="@/assets/FUT_white.png"
-              width="200"
-            />
+            <v-list-item-content class="justify-center">
+              <v-img
+                min-width="100"
+                src="@/assets/other/logo_sspp_white.png"
+                width="200"
+              />
+            </v-list-item-content>
           </div>
         </v-list-item>
-        <v-list-item
-          v-for="item in items"
-          :key="item.title"
-          @click="$vuetify.goTo(item.id)"
-        >
+        <div v-for="item in items" :key="item.title">
+          <v-list-item
+            v-if="currentRouteName == '/'"
+            @click="$vuetify.goTo(item.id)"
+          >
+            <v-list-item-content>
+              <v-list-item-title>{{ item.title }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </div>
+
+        <v-list-item href="#/crew">
           <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <v-list-item-title>Kadra</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item href="#/rules">
+          <v-list-item-content>
+            <v-list-item-title>Regulamin</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -71,11 +96,17 @@ export default {
       drawer: false,
       main: { title: "Karpicko 2020", id: "#hero" },
       items: [
+        { title: "Rekrutacja", id: "#invitation" },
+        { title: "Atrakcje", id: "#agenda" },
         { title: "Zakwaterowanie", id: "#accommodation" },
-        { title: "Kontakt", id: "#contact" },
         { title: "Partnerzy", id: "#partners" }
       ]
     };
+  },
+  computed: {
+    currentRouteName() {
+      return this.$route.path;
+    }
   }
 };
 </script>
