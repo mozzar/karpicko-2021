@@ -3,25 +3,6 @@
     <v-container fluid>
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">
-          <h1 class="display-2 font-weight-bold mt-7">Koordynatorzy</h1>
-        </v-col>
-      </v-row>
-
-      <v-row class="mt-10" align="start" justify="center">
-        <coordinator-card
-          :title="daniel.title"
-          :text="daniel.text"
-          :avatar="daniel.avatar"
-        />
-        <coordinator-card
-          :title="oskar.title"
-          :text="oskar.text"
-          :avatar="oskar.avatar"
-        />
-      </v-row>
-
-      <v-row align="center" justify="center">
-        <v-col class="text-center" cols="12">
           <h1 class="display-2 font-weight-bold mt-7">Kadra</h1>
         </v-col>
       </v-row>
@@ -51,11 +32,10 @@
 </template>
 
 <script>
-import CoordinatorCard from "./CoordinatorCard";
 import CrewCard from "./CrewCard";
 export default {
   name: "Crew",
-  components: { CrewCard, CoordinatorCard },
+  components: { CrewCard },
   data() {
     return {
       daniel: {
@@ -90,7 +70,7 @@ export default {
         {
           name: "Bartosz Cieślewicz",
           faculty: "WIiT",
-          avatar: ""
+          avatar: "Bartek_C.jpg"
         },
         {
           name: "Natalia Fedko",
@@ -100,7 +80,7 @@ export default {
         {
           name: "Wojciech Gindera",
           faculty: "WIŚiE",
-          avatar: ""
+          avatar: "Wojtek_G.jpg"
         },
         {
           name: "Patryk Ginter",
@@ -141,6 +121,16 @@ export default {
           name: "Marek Mocny",
           faculty: "WILiT",
           avatar: "Marek.jpg"
+        },
+        {
+          name: "Daniel Mokrzan",
+          faculty: "WILiT",
+          avatar: "Daniel_M.jpg"
+        },
+        {
+          name: "Oskar Napierała",
+          faculty: "WIM",
+          avatar: "Oskar.jpg"
         },
         {
           name: "Marta Orlikowska",

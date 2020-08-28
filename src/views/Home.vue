@@ -5,7 +5,6 @@
     <invitation />
     <agenda />
     <accommodation />
-    <contact />
     <partners />
     <opinions />
   </div>
@@ -14,7 +13,6 @@
 <script>
 // @ is an alias to /src
 import HomeHero from "../components/Home/HomeHero";
-import Contact from "../components/Home/Contact";
 import Partners from "@/components/Home/Partners";
 import Opinions from "@/components/Home/opinions/Opinions";
 import Accommodation from "@/components/Home/accommodation/Accommodation";
@@ -30,7 +28,6 @@ export default {
     Agenda,
     Accommodation,
     Opinions,
-    Contact,
     Partners,
     HomeHero
   }

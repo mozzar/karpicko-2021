@@ -1,5 +1,5 @@
 <template>
-  <v-parallax dark class="mt-4" src="@/assets/invitation/inv.jpg" height="350">
+  <v-parallax dark class="mt-4 mx-n5" src="@/assets/invitation/inv.jpg" height="350">
     <v-row align="center" justify="center">
       <v-col class="text-center" cols="12">
         <v-btn
