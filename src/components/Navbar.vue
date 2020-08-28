@@ -18,8 +18,8 @@
             alt="sspp-name"
             contain
             min-width="10"
-            src="@/assets/SSPP_white.png"
-            width="85"
+            src="@/assets/other/logo_sspp_biale.png"
+            width="125"
           />
         </v-btn>
         <v-btn
@@ -33,8 +33,8 @@
             alt="sspp-name"
             contain
             min-width="10"
-            src="@/assets/SSPP_white.png"
-            width="85"
+            src="@/assets/other/logo_sspp_biale.png"
+            width="125"
           />
         </v-btn>
       </div>
@@ -137,12 +137,6 @@ export default {
     currentRouteName() {
       return this.$route.path;
     }
-  },
-  mounted() {
-    console.info("App this router:", this.$router);
-    console.info("App currentRoute:", this.$router.currentRoute);
-    console.info("App currentRoute:", this.$router.currentRoute.path);
-    console.info("App currentRoute:", this.$route.path);
   }
 };
 </script>

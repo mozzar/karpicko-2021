@@ -70,19 +70,10 @@ export default {
       ]
     };
   },
-  computed: {
-    dialogFun: function() {
-      return true;
-    }
-  },
   methods: {
     clickMe(e) {
       this.dialogSrc = this.imageList[e.currentTarget.value].src;
       this.dialog = true;
-    },
-    nothing() {},
-    closeMe() {
-      this.imageIndex = 0;
     }
   }
 };

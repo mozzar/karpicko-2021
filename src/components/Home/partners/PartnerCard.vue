@@ -1,7 +1,7 @@
 <template>
   <v-card class="elevation-0 transparent">
     <v-card-text class="text-xs-center">
-      <img :src="require(`@/assets/partners/${src}`)" height="100">
+      <img :src="require(`@/assets/partners/${src}`)" height="100" />
     </v-card-text>
   </v-card>
 </template>
@@ -12,9 +12,7 @@ export default {
   props: {
     src: String
   }
-}
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

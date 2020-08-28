@@ -13,7 +13,7 @@
 <script>
 // @ is an alias to /src
 import HomeHero from "../components/Home/HomeHero";
-import Partners from "@/components/Home/Partners";
+import Partners from "@/components/Home/partners/Partners";
 import Opinions from "@/components/Home/opinions/Opinions";
 import Accommodation from "@/components/Home/accommodation/Accommodation";
 import Agenda from "@/components/Home/Agenda";

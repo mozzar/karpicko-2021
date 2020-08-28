@@ -38,24 +38,6 @@ export default {
   components: { CrewCard },
   data() {
     return {
-      daniel: {
-        title: "Daniel Mokrzan",
-        text: {
-          email: "daniel123@somemail.com",
-          phone: "+48 213 769 666",
-          faculty: "WILiT"
-        },
-        avatar: "Daniel_M.jpg"
-      },
-      oskar: {
-        title: "Oskar Napierała",
-        text: {
-          email: "oskar123@somemail.com",
-          phone: "+48 213 769 666",
-          faculty: "WIM"
-        },
-        avatar: "Oskar.jpg"
-      },
       crew: [
         {
           name: "Szymon Bujanowski",

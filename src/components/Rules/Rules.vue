@@ -20,7 +20,7 @@ export default {
   name: "Rules",
   data() {
     return {
-      rules: ["1. Nie pij z Oskarem", "2. W innym przypadku powodzenia"]
+      rules: ["Regulamin w opracowywaniu"]
     };
   }
 };
