@@ -8,33 +8,18 @@
       <v-spacer class=" hidden-lg-and-up"></v-spacer>
       <div class="d-flex align-center">
         <v-btn
-          v-if="this.$route.path == '/'"
           text
           block
           x-large
+          href="#/"
           @click="() => $vuetify.goTo(main.id)"
         >
           <v-img
             alt="sspp-name"
             contain
             min-width="10"
-            src="@/assets/other/logo_sspp_biale.png"
-            width="125"
-          />
-        </v-btn>
-        <v-btn
-          v-else
-          text
-          block
-          x-large
-          @click="() => this.$router.push('/#hero')"
-        >
-          <v-img
-            alt="sspp-name"
-            contain
-            min-width="10"
-            src="@/assets/other/logo_sspp_biale.png"
-            width="125"
+            src="@/assets/other/logo_sspp_white_narrow.png"
+            width="90"
           />
         </v-btn>
       </div>
@@ -65,30 +50,15 @@
       disable-resize-watcher
     >
       <v-list>
-        <v-list-item
-          v-if="this.$route.path == '/'"
-          @click="() => $vuetify.goTo(main.id)"
-        >
+        <v-list-item href="#/" @click="() => $vuetify.goTo(main.id)">
           <div class="d-flex align-center">
             <v-list-item-content class="justify-center">
               <v-img
                 min-width="100"
-                src="@/assets/other/logo_sspp_biale.png"
+                src="@/assets/other/logo_sspp_white.png"
                 width="200"
               />
             </v-list-item-content>
-          </div>
-        </v-list-item>
-        <v-list-item v-else @click="() => this.$router.push('/#hero')">
-          <div class="d-flex align-center">
-            <v-list-item-title>
-              <v-img
-                contain
-                min-width="100"
-                src="@/assets/other/logo_sspp_biale.png"
-                width="200"
-              />
-            </v-list-item-title>
           </div>
         </v-list-item>
         <div v-for="item in items" :key="item.title">

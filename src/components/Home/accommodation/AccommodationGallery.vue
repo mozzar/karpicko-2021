@@ -57,7 +57,7 @@ export default {
         },
         {
           id: 2,
-          src: "pokoj.jpg"
+          src: "pp.jpg"
         },
         {
           id: 3,
