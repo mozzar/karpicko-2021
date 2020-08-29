@@ -7,7 +7,7 @@
           x-large
           elevation="10"
           height="75"
-          width="350"
+          width="325"
           color="primary"
           class="font-weight-bold display-1"
         >

@@ -1,11 +1,7 @@
 <template>
   <div id="crew">
     <v-container fluid>
-      <v-row align="center" justify="center">
-        <v-col class="text-center" cols="12">
-          <h1 class="display-2 font-weight-bold mt-7">Kadra</h1>
-        </v-col>
-      </v-row>
+      <component-title text="Kadra" />
 
       <v-row class="mt-10" align="start" justify="center" no-gutters>
         <v-col cols="12" lg="10" md="10">
@@ -33,9 +29,10 @@
 
 <script>
 import CrewCard from "./CrewCard";
+import ComponentTitle from "@/components/ComponentTitle";
 export default {
   name: "Crew",
-  components: { CrewCard },
+  components: {ComponentTitle, CrewCard },
   data() {
     return {
       crew: [

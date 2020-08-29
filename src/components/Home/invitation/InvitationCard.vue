@@ -5,16 +5,18 @@
         <v-img :src="require(`@/assets/invitation/${icon}`)" height="80" contain></v-img>
       </v-card-text>
       <v-card-title primary-title class="layout justify-center">
-        <div class="headline text-xs-center">{{ title }}</div>
+        <component-text :text="title" />
       </v-card-title>
-      <v-card-text class="subtitle-1">{{ text }} </v-card-text>
+      <v-card-text class="text-sm-subtitle-1 text-md-subtitle-1 text-lg-subtitle-1 text-xl-subtitle-1 text-body-2">{{ text }} </v-card-text>
     </v-card>
   </v-col>
 </template>
 
 <script>
+import ComponentText from "@/components/ComponentText";
 export default {
 name: "InvitationCard",
+  components: {ComponentText},
   props: {
     title: String,
     text: String,

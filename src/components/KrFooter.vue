@@ -45,7 +45,7 @@ export default {
       },
       {
         fa: "fas fa-envelope",
-        url: "mailto:samorzad@samorzad.put.poznan.pl."
+        url: "mailto:samorzad@samorzad.put.poznan.pl"
       }
     ]
   })

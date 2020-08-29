@@ -1,11 +1,7 @@
 <template>
   <div id="opinions">
     <v-container fluid>
-      <v-row align="center" justify="center">
-        <v-col class="text-center" cols="12">
-          <h1 class="display-2 font-weight-bold mt-7">Opinie</h1>
-        </v-col>
-      </v-row>
+      <component-title text="Opinie" />
 
       <v-row justify="center" align="center">
         <v-col cols="12" lg="6" md="9" class="hidden-sm-and-down">
@@ -38,9 +34,10 @@
 <script>
 import OpinionItem from "@/components/Home/opinions/OpinionItem";
 import OpinionItemSmAndDown from "@/components/Home/opinions/OpinionItemSmAndDown";
+import ComponentTitle from "@/components/ComponentTitle";
 export default {
   name: "Opinions",
-  components: { OpinionItemSmAndDown, OpinionItem },
+  components: {ComponentTitle, OpinionItemSmAndDown, OpinionItem },
   data() {
     return {
       test: {

@@ -1,21 +1,13 @@
 <template>
   <div id="invitation" class="mt-n8">
     <v-container fluid>
-      <v-row align="center" justify="center">
-        <v-col class="text-center" cols="12">
-          <h1 class="display-2 font-weight-bold mt-7">Rekrutacja</h1>
-        </v-col>
-      </v-row>
-      <v-row align="center" justify="center">
-        <v-col cols="11" lg="7" md="9">
-          <h2 class="headline">
-            Drodzy Studenci Pierwszego Roku! Jest nam szalenie miło zaprosić Was
+      <component-title text="Rekrutacja" />
+      <component-text
+        text="Drodzy Studenci Pierwszego Roku! Jest nam szalenie miło zaprosić Was
             do uczestnictwa w Obozie Szkoleniowo-Integracyjnym “Karpicko” dla
             rocznika “0” Politechniki Poznańskiej, który odbędzie się w wrześniu
-            2020!
-          </h2>
-        </v-col>
-      </v-row>
+            2020!"
+      />
       <v-row class="mt-10" align="start" justify="center">
         <invitation-card
           :title="card1.title"
@@ -33,14 +25,10 @@
           :icon="card3.icon"
         />
       </v-row>
-      <v-row align="center" justify="center">
-        <v-col cols="11" lg="7" md="9">
-          <h2 class="headline">
-            Jeśli chcesz się przystąpić do rekrutacji na nasz jedyny w swoim
-            rodzaju obóz, to wypełnij formularz poniżej.
-          </h2>
-        </v-col>
-      </v-row>
+      <component-text
+        text="Jeśli chcesz się przystąpić do rekrutacji na nasz jedyny w swoim
+            rodzaju obóz, to wypełnij formularz poniżej."
+      />
       <invitation-parallax />
     </v-container>
   </div>
@@ -49,9 +37,16 @@
 <script>
 import InvitationParallax from "@/components/Home/invitation/InvitationParallax";
 import InvitationCard from "@/components/Home/invitation/InvitationCard";
+import ComponentTitle from "@/components/ComponentTitle";
+import ComponentText from "@/components/ComponentText";
 export default {
   name: "Invitation",
-  components: { InvitationCard, InvitationParallax },
+  components: {
+    ComponentText,
+    ComponentTitle,
+    InvitationCard,
+    InvitationParallax
+  },
   data() {
     return {
       card1: {
