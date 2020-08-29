@@ -3,13 +3,15 @@
     <v-container fluid>
       <component-title text="Atrakcje" />
       <component-text
-        text="Damy Wam okazję do rozpoczęcia swojej przygody ze
-      studiami w jak najlepszej formie. Rozmaite atrakcje, zabawa do białego
-      rana – a to nie wszystko co dla Was przygotowaliśmy. Nie zdradzimy Wam na
-      razie szczegółów, ale nie martwcie się, wiemy, co robimy. Będziecie
-      również mieli okazję skorzystać z przydatnych dla Was na początku studiów
-      szkoleń. Karpicko jeszcze nigdy nikogo nie zawiodło i mimo zmiany
-      tegorocznej lokalizacji, nie zmieniamy naszego podejścia."
+        text="Damy Wam okazję do rozpoczęcia swojej przygody ze studiami w
+        najlepszej możliwej formie. Rozmaite atrakcje i aktywności,
+        niezapomniane przeżycia oraz przede wszystkim zabawa do białego rana
+        – a to nie wszystko co dla Was przygotowaliśmy. Nie zdradzimy Wam na
+        razie szczegółów, ale nie martwcie się, organizujemy obóz już od
+        wielu lat, więc wiemy co robimy.  Będziecie również mieli okazję
+        skorzystać ze szkoleń, które okażą się bardzo przydatne na początku
+        studiów. Karpicko zawsze organizowane jest na najwyższym poziomie, a my
+        mimo zmiany tegorocznej lokalizacji, nie zmieniamy naszego podejścia!"
       />
     </v-container>
   </div>

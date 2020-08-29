@@ -3,16 +3,20 @@
     <v-container fluid>
       <component-title text="Zakwaterowanie" />
       <component-text
-        text="W czasie obozu nie musicie się martwić o zakwaterowanie. Każdy z Was
-            będzie miał możliwość poznania życia studenckiego w akademiku, który
-            znajduje się na Kampusie Warta. Co to oznacza? Blisko na szkolenia,
-            blisko na imprezy, blisko do nas!"
+        text="W czasie obozu nie musicie się oczywiście martwić o zakwaterowanie.
+        Każdy z Was będzie miał możliwość poznania życia studenckiego w
+        najbardziej studenckim budynku na Uczelni - akademiku, który znajduje
+        się na Kampusie Warta. Co to oznacza? Blisko na szkolenia,
+        blisko na imprezy, blisko do nas! "
       />
       <component-text
-        text="Sam teren Politechniki Poznańskiej jest przyjemny dla studentów.
-            Znajdują się tam grille do chillowania, tuż obok jest Galeria
-            Posnania, a najlepszym czasem dla studentów w tym gorącym okresie
-            jest przesiadywanie nad Wartą."
+        text="Sam teren Politechniki Poznańskiej jest korzystny dla jego
+        użytkowników. Lokalizacja jest bardzo dobra, infrastruktura ciągle
+        dopasowywana do potrzeb studentów, a teren dostatecznie duży, żeby
+        każdy znalazł swoje ulubione miejsce. Dla tych, którzy kochają
+        naturę znajdą się miejsca na rozłożenie kocyka na trawie. Natomiast
+        Ci co cenią sobie wygodne miejsce do integracji ze znajomymi,
+        odnajdą się w kultowych już strefach grillowania."
       />
       <accommodation-gallery />
     </v-container>

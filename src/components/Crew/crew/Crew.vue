@@ -32,7 +32,7 @@ import CrewCard from "./CrewCard";
 import ComponentTitle from "@/components/ComponentTitle";
 export default {
   name: "Crew",
-  components: {ComponentTitle, CrewCard },
+  components: { ComponentTitle, CrewCard },
   data() {
     return {
       crew: [

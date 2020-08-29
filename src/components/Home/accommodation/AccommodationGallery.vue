@@ -53,7 +53,7 @@ export default {
         },
         {
           id: 1,
-          src: "ds2_2.png"
+          src: "ds2_2.jpg"
         },
         {
           id: 2,

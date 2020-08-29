@@ -10,7 +10,7 @@
         <v-img
           src="@/assets/other/Karpicko_White.png"
           class="hidden-sm-and-up"
-          max-width="350"
+          max-width="330"
         />
       </v-row>
     </v-parallax>

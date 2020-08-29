@@ -28,16 +28,16 @@
         <v-btn
           v-if="currentRouteName == '/'"
           text
-          class="hidden-md-and-down"
+          class="hidden-md-and-down text-button"
           elevation="0"
           @click="() => $vuetify.goTo(item.id)"
           >{{ item.title }}</v-btn
         >
       </div>
-      <v-btn text class="hidden-md-and-down" elevation="0" href="#/crew">
+      <v-btn text class="hidden-md-and-down text-button" elevation="0" href="#/crew">
         Kadra
       </v-btn>
-      <v-btn text class="hidden-md-and-down" elevation="0" href="#/rules">
+      <v-btn text class="hidden-md-and-down text-button" elevation="0" href="#/rules">
         Regulamin
       </v-btn>
     </v-app-bar>
@@ -67,19 +67,19 @@
             @click="$vuetify.goTo(item.id)"
           >
             <v-list-item-content>
-              <v-list-item-title>{{ item.title }}</v-list-item-title>
+              <v-list-item-title class="text-button">{{ item.title }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </div>
 
         <v-list-item href="#/crew">
           <v-list-item-content>
-            <v-list-item-title>Kadra</v-list-item-title>
+            <v-list-item-title class="text-button">Kadra</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item href="#/rules">
           <v-list-item-content>
-            <v-list-item-title>Regulamin</v-list-item-title>
+            <v-list-item-title class="text-button">Regulamin</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
