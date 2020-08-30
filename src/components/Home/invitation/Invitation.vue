@@ -1,9 +1,9 @@
 <template>
   <div id="invitation" class="mt-n8">
     <v-container fluid>
-      <component-title text="Rekrutacja" />
+      <component-title text="Zapraszamy!" />
       <component-text
-        text="Zapraszamy! Drodzy Studenci Pierwszego Roku! Jest nam szalenie miło
+        text="Drodzy Studenci Pierwszego Roku! Jest nam szalenie miło
         zaprosić Was do uczestnictwa w Obozie Integracyjno-Szkoleniowym
         “Karpicko” dla pierwszorocznych studentów Politechniki Poznańskiej,
         który odbędzie się we wrześniu 2020!"
@@ -13,7 +13,7 @@
       przez nas atrakcjami i opisami obozu, a w przypadku pojawienia się
        pytań zachęcamy do kontaktu."
       />
-      <v-row class="mt-10" align="start" justify="center">
+      <v-row class="mt-8" align="start" justify="center">
         <invitation-card
           :title="card1.title"
           :text="card1.text"

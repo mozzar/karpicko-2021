@@ -16,7 +16,7 @@ import HomeHero from "../components/Home/HomeHero";
 import Partners from "@/components/Home/partners/Partners";
 import Opinions from "@/components/Home/opinions/Opinions";
 import Accommodation from "@/components/Home/accommodation/Accommodation";
-import Agenda from "@/components/Home/Agenda";
+import Agenda from "@/components/Home/agenda/Agenda";
 import Invitation from "@/components/Home/invitation/Invitation";
 import Info from "@/components/Home/Info";
 
