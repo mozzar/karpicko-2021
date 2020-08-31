@@ -10,6 +10,8 @@
           width="325"
           color="primary"
           class="font-weight-bold display-1"
+          href="https://forms.gle/7XgzqvF7xfv1evYy9"
+          target="_blank"
         >
           Rejestracja
           <v-icon class="ml-5" size="40" right

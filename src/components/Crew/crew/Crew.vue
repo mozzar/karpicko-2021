@@ -69,7 +69,7 @@ export default {
         {
           name: "Marta Kocurek",
           faculty: "WTCh",
-          avatar: ""
+          avatar: "Kocurek.jpg"
         },
         {
           name: "Bartosz Kruczyński",
@@ -89,7 +89,7 @@ export default {
         {
           name: "Martyna Kurz",
           faculty: "WIiT",
-          avatar: ""
+          avatar: "Kurz.jpeg"
         },
         {
           name: "Dagmara Maćkowiak",
@@ -134,7 +134,7 @@ export default {
         {
           name: "Julia Rogacka",
           faculty: "WA",
-          avatar: ""
+          avatar: "Julka.jpeg"
         },
         {
           name: "Jędrzej Smolarkiewicz",
@@ -144,7 +144,7 @@ export default {
         {
           name: "Aleksandra Stróżyk",
           faculty: "WIM",
-          avatar: ""
+          avatar: "Ola_S.jpeg"
         },
         {
           name: "Barbara Winiarczyk",
