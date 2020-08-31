@@ -40,14 +40,9 @@ export default {
   components: { ComponentTitle, OpinionItemSmAndDown, OpinionItem },
   data() {
     return {
-      test: {
-        src: "Oskar_i_Mokrzan.jpg",
-        quote: '"Było w pytę, a będzie nawet lepiej"',
-        name: "- Oskar i Daniel"
-      },
       opinionList: [
         {
-          src: "Marianna.png",
+          src: "Marianna.jpg",
           quote:
             '"Wyjazd na Karpicko to jeden z najlepszych sposób ' +
             "na rozpoczęcie przygody ze studiowaniem! Razem z przyjaciółką " +
@@ -56,7 +51,7 @@ export default {
           name: "- Marianna Zawal"
         },
         {
-          src: "Anna.png",
+          src: "Anna.jpg",
           quote:
             '"Karpicko? Brzmi niewinnie, jednak raz przeżyte wspomina się latami. ' +
             "Tak naprawdę słowa nie opiszą atmosfery, która panuje na tym wyjeździe " +
@@ -65,7 +60,7 @@ export default {
           name: "- Anna Prałat"
         },
         {
-          src: "Weronika.png",
+          src: "Weronika.jpg",
           quote:
             '"Zapisując się na obóz nie znałam nikogo ale było warto! ' +
             "Wspaniali ludzie, pełni pozytywnej energii. Świetna atmosfera " +
@@ -73,7 +68,7 @@ export default {
           name: "- Weronika Jaworska"
         },
         {
-          src: "Katarzyna.png",
+          src: "Katarzyna.jpg",
           quote:
             '"Karpicko to nie wyjazd integracyjny, to stan umysłu. Czy polecam? Zdecydowanie! ' +
             "Czy pojechałabym jeszcze raz? BARDZO CHĘTNIE! " +
@@ -81,14 +76,14 @@ export default {
           name: "- Katarzyna Chmielewska"
         },
         {
-          src: "Bartosz.png",
+          src: "Bartosz.jpg",
           quote:
             '"Fajny wyjazd, miło spędzony czas i dużo nowo poznanych ' +
             'osób. Polecam, naprawde warto"',
           name: "- Bartosz Chazan"
         },
         {
-          src: "Ola.png",
+          src: "Ola.jpg",
           quote:
             '"Karpicko to niesamowite wspomnienia, czas wypełniony po brzegi i ' +
             "wspaniali ludzie, którzy zostają na długo po zakończeniu obozu. To " +
