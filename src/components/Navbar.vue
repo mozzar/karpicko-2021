@@ -106,9 +106,9 @@ export default {
         { title: "Partnerzy", id: "#partners" }
       ],
       pages: [
-        { title: "Kadra", url: "#/crew" },
-        { title: "Regulamin", url: "#/rules" },
-        { title: "Kontakt", url: "#/contact" }
+        { title: "Kadra", url: "#/kadra" },
+        { title: "Regulamin", url: "#/regulamin" },
+        { title: "Kontakt", url: "#/kontakt" }
       ]
     };
   },

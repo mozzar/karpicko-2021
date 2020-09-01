@@ -5,7 +5,7 @@
 
       <v-row justify="center" align="center">
         <v-col cols="12" lg="7" md="9" class="hidden-sm-and-down">
-          <v-carousel cycle show-arrows-on-hover hide-delimiters height="440">
+          <v-carousel cycle show-arrows-on-hover hide-delimiters interval="10000" height="440">
             <v-carousel-item v-for="(slide, index) in opinionList" :key="index">
               <opinion-item
                 :src="slide.src"
