@@ -4,13 +4,13 @@
       <component-title text="Regulamin" />
       <v-row align="center" justify="center">
         <v-btn
+          href="/rules/Regulamin-Karpicko-2020.pdf"
           download
-          href="@/assets/rules/Regulamin-Karpicko-2020.pdf"
           outlined
           rounded
           color="primary"
           x-large
-          class="mt-10"
+          class="mt-8 text-button"
         >
           Regulamin
         </v-btn>
@@ -18,12 +18,12 @@
       <v-row align="center" justify="center">
         <v-btn
           download
-          href="@/assets/rules/Zasady_bezpieczeństwa.pdf"
+          href="/rules/Zasady_bezpieczeństwa.pdf"
           outlined
           rounded
           color="primary"
           x-large
-          class="mt-4"
+          class="mt-4 text-button"
         >
           Zasady bezpieczeństwa
         </v-btn>
@@ -37,22 +37,6 @@ import ComponentTitle from "@/components/ComponentTitle";
 export default {
   name: "Rules",
   components: { ComponentTitle },
-  data() {
-    return {
-      rules: ["Regulamin w opracowywaniu"]
-    };
-  },
-  methods: {
-    readFile() {
-      window.open("@/assets/rules/Regulamin-Karpicko-2020.pdf", "_blank"); //to open in new tab
-    }
-    // handleClick: () => {
-    //   window.open(
-    //     require("@/assets/rules/Regulamin-Karpicko-2020.pdf"),
-    //     "_blank"
-    //   );
-    // }
-  }
 };
 </script>
 
