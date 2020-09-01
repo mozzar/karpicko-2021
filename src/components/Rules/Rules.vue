@@ -1,28 +1,42 @@
 <template>
   <div id="rules">
     <v-container fluid>
+      <component-title text="Regulamin" />
       <v-row align="center" justify="center">
-        <v-col class="text-center" cols="12">
-          <h1 class="display-2 font-weight-bold mt-7">Regulamin</h1>
-        </v-col>
-        <v-col class="text-center" cols="10" lg="5" md="8">
-          <h2 class="headline" v-for="(rule, index) in rules" :key="index">
-            {{ rule }}
-          </h2>
-        </v-col>
+        <v-btn
+          href="/rules/Regulamin-Karpicko-2020.pdf"
+          download
+          outlined
+          rounded
+          color="primary"
+          x-large
+          class="mt-8 text-button"
+        >
+          Regulamin
+        </v-btn>
+      </v-row>
+      <v-row align="center" justify="center">
+        <v-btn
+          download
+          href="/rules/Zasady_bezpieczeństwa.pdf"
+          outlined
+          rounded
+          color="primary"
+          x-large
+          class="mt-4 text-button"
+        >
+          Zasady bezpieczeństwa
+        </v-btn>
       </v-row>
     </v-container>
   </div>
 </template>
 
 <script>
+import ComponentTitle from "@/components/ComponentTitle";
 export default {
   name: "Rules",
-  data() {
-    return {
-      rules: ["Regulamin w opracowywaniu"]
-    };
-  }
+  components: { ComponentTitle },
 };
 </script>
 

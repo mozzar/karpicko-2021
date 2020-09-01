@@ -9,7 +9,7 @@
         id="opinion_avatar"
       />
     </v-col>
-    <v-col cols="6" class="mt-7">
+    <v-col cols="6">
       <blockquote class="blockquote text-h5 black--text" >
         {{ quote }}
       </blockquote>

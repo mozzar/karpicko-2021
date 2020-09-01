@@ -28,18 +28,22 @@
         <v-btn
           v-if="currentRouteName == '/'"
           text
-          class="hidden-md-and-down"
+          class="hidden-md-and-down text-button"
           elevation="0"
           @click="() => $vuetify.goTo(item.id)"
           >{{ item.title }}</v-btn
         >
       </div>
-      <v-btn text class="hidden-md-and-down" elevation="0" href="#/crew">
-        Kadra
-      </v-btn>
-      <v-btn text class="hidden-md-and-down" elevation="0" href="#/rules">
-        Regulamin
-      </v-btn>
+      <div v-for="page in pages" :key="page.title">
+        <v-btn
+          text
+          class="hidden-md-and-down text-button"
+          elevation="0"
+          :href="page.url"
+        >
+          {{ page.title }}
+        </v-btn>
+      </div>
     </v-app-bar>
 
     <v-navigation-drawer
@@ -67,21 +71,21 @@
             @click="$vuetify.goTo(item.id)"
           >
             <v-list-item-content>
-              <v-list-item-title>{{ item.title }}</v-list-item-title>
+              <v-list-item-title class="text-button">{{
+                item.title
+              }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </div>
-
-        <v-list-item href="#/crew">
-          <v-list-item-content>
-            <v-list-item-title>Kadra</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item href="#/rules">
-          <v-list-item-content>
-            <v-list-item-title>Regulamin</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
+        <div v-for="page in pages" :key="page.url">
+          <v-list-item :href="page.url">
+            <v-list-item-content>
+              <v-list-item-title class="text-button">
+                {{ page.title }}
+              </v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </div>
       </v-list>
     </v-navigation-drawer>
   </span>
@@ -100,6 +104,11 @@ export default {
         { title: "Atrakcje", id: "#agenda" },
         { title: "Zakwaterowanie", id: "#accommodation" },
         { title: "Partnerzy", id: "#partners" }
+      ],
+      pages: [
+        { title: "Kadra", url: "#/kadra" },
+        { title: "Regulamin", url: "#/regulamin" },
+        { title: "Kontakt", url: "#/kontakt" }
       ]
     };
   },

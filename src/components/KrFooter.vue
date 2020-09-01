@@ -42,6 +42,10 @@ export default {
       {
         fa: "fab fa-instagram",
         url: "https://www.instagram.com/samorzadpp/"
+      },
+      {
+        fa: "fas fa-envelope",
+        url: "mailto:samorzad@samorzad.put.poznan.pl"
       }
     ]
   })

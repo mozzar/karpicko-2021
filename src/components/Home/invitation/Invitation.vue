@@ -1,22 +1,19 @@
 <template>
   <div id="invitation" class="mt-n8">
     <v-container fluid>
-      <v-row align="center" justify="center">
-        <v-col class="text-center" cols="12">
-          <h1 class="display-2 font-weight-bold mt-7">Rekrutacja</h1>
-        </v-col>
-      </v-row>
-      <v-row align="center" justify="center">
-        <v-col cols="11" lg="7" md="9">
-          <h2 class="headline">
-            Drodzy Studenci Pierwszego Roku! Jest nam szalenie miło zaprosić Was
-            do uczestnictwa w Obozie Szkoleniowo-Integracyjnym “Karpicko” dla
-            rocznika “0” Politechniki Poznańskiej, który odbędzie się w wrześniu
-            2020!
-          </h2>
-        </v-col>
-      </v-row>
-      <v-row class="mt-10" align="start" justify="center">
+      <component-title text="Zapraszamy!" />
+      <component-text
+        text="Drodzy Studenci Pierwszego Roku! Jest nam szalenie miło
+        zaprosić Was do uczestnictwa w Obozie Integracyjno-Szkoleniowym
+        “Karpicko” dla pierwszorocznych studentów Politechniki Poznańskiej,
+        który odbędzie się we wrześniu 2020!"
+      />
+      <component-text
+        text="Zapraszamy do zapoznania się z oferowanymi
+      przez nas atrakcjami i opisami obozu, a w przypadku pojawienia się
+       pytań zachęcamy do kontaktu."
+      />
+      <v-row class="mt-8" align="start" justify="center">
         <invitation-card
           :title="card1.title"
           :text="card1.text"
@@ -33,14 +30,11 @@
           :icon="card3.icon"
         />
       </v-row>
-      <v-row align="center" justify="center">
-        <v-col cols="11" lg="7" md="9">
-          <h2 class="headline">
-            Jeśli chcesz się przystąpić do rekrutacji na nasz jedyny w swoim
-            rodzaju obóz, to wypełnij formularz poniżej.
-          </h2>
-        </v-col>
-      </v-row>
+      <component-text
+        text="Aby przystąpić do rekrutacji i móc wziąć udział w najbardziej
+        wyjątkowym obozie dedykowanym właśnie dla Was zapraszamy do wypełnienia
+        formularza poniżej."
+      />
       <invitation-parallax />
     </v-container>
   </div>
@@ -49,34 +43,43 @@
 <script>
 import InvitationParallax from "@/components/Home/invitation/InvitationParallax";
 import InvitationCard from "@/components/Home/invitation/InvitationCard";
+import ComponentTitle from "@/components/ComponentTitle";
+import ComponentText from "@/components/ComponentText";
 export default {
   name: "Invitation",
-  components: { InvitationCard, InvitationParallax },
+  components: {
+    ComponentText,
+    ComponentTitle,
+    InvitationCard,
+    InvitationParallax
+  },
   data() {
     return {
       card1: {
-        title: "Lorem ipsum",
+        title: "Szkolenia i integracje",
         text:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus " +
-          "facilisis, ipsum in suscipit ultricies, leo ligula laoreet mi, sit amet " +
-          "mollis massa justo eget sapien. Phasellus quis consequat justo. Nulla " +
-          "elementum mattis dapibus.",
-        icon: "question.png"
+          "Przygotowane specjalnie dla Was aktywności zaplanowane podczas pięciu " +
+          "dni obozu, które pozwolą Wam zarówno rozwinąć swoje umiejętności " +
+          "miękkie jak również zapoznać się z panującymi na Uczelni zwyczajami.",
+        icon: "icon_presentation.png"
       },
       card2: {
-        title: "Lorem ipsum",
+        title: "Nowe znajomości",
         text:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus " +
-          "facilisis, ipsum in suscipit ultricies, leo ligula laoreet mi.",
-        icon: "question.png"
+          "Będziecie mieli możliwość poznać zarówno innych pierwszorocznych " +
+          "studentów, którzy tak jak Wy po raz pierwszy przekraczają mury " +
+          "Uczelni, ale także starszych kolegów z Samorządu Studentów, którzy " +
+          "wprowadzą Was w tajniki życia studenckiego.",
+        icon: "icon_friends.png"
       },
       card3: {
-        title: "Lorem ipsum",
+        title: "Kampus Warta",
         text:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus " +
-          "facilisis, ipsum in suscipit ultricies, leo ligula laoreet mi, sit amet " +
-          "mollis massa justo eget sapien. Phasellus quis consequat justo. Nulla ",
-        icon: "question.png"
+          "Czyli niepowtarzalna okazja poznania z nami Politechniki Poznańskiej " +
+          "jeszcze zanim rozpoczniecie zajęcia. Dzięki temu nie ma mowy, że " +
+          "zgubicie się pierwszego dnia w zawiłych korytarzach naszych budynków " +
+          "- ot taka oszczędność czasu i stresu specjalnie dla Was!",
+        icon: "icon_university.png"
       }
     };
   }

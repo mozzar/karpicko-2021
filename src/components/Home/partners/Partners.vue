@@ -1,16 +1,10 @@
 <template>
   <div id="partners">
     <v-container fluid>
-      <v-row align="center" justify="center">
-        <v-col class="text-center" cols="12">
-          <h1 class="display-2 font-weight-bold mt-7">Partnerzy</h1>
-        </v-col>
-        <v-col class="text-center" cols="10" lg="5" md="8">
-          <h2 class="headline">
-            Nasi partnerzy, bez których nasz wyjazd by się nie udał!
-          </h2>
-        </v-col>
-      </v-row>
+      <component-title text="Partnerzy" />
+      <component-text
+        text="Nasi partnerzy, bez których nasz wyjazd by się nie udał!"
+      />
       <v-row class="mt-10" align="start" justify="center" no-gutters>
         <v-col cols="12" lg="10" md="10">
           <v-row class="mt-10" align="start" justify="center" no-gutters>
@@ -33,9 +27,11 @@
 
 <script>
 import PartnerCard from "@/components/Home/partners/PartnerCard";
+import ComponentTitle from "@/components/ComponentTitle";
+import ComponentText from "@/components/ComponentText";
 export default {
   name: "Partners",
-  components: { PartnerCard },
+  components: { ComponentText, ComponentTitle, PartnerCard },
   data() {
     return {
       partnerList: [

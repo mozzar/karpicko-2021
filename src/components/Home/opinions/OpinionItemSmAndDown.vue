@@ -21,8 +21,8 @@
       </v-col>
     </v-row>
     <v-row justify="center">
-      <v-col cols="12" sm="8" class="mt-7">
-        <blockquote class="blockquote text-h5 black--text text-center">
+      <v-col cols="12" sm="8">
+        <blockquote class="blockquote black--text text-center text-subtitle-1 headline">
           {{ quote }}
         </blockquote>
         <p class="text-right align-baseline grey--text">{{ name }}</p>

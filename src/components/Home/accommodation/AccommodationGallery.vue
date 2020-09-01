@@ -43,7 +43,7 @@ export default {
     return {
       todo: "buttony, każdy otwiera carousel inaczej",
       dialog: false,
-      dialogSrc: "ds2_2.png",
+      dialogSrc: "ds2_2.jpg",
       imageIndex: 0,
       orderedImageList: [],
       imageList: [
@@ -53,7 +53,7 @@ export default {
         },
         {
           id: 1,
-          src: "ds2_2.png"
+          src: "ds2_2.jpg"
         },
         {
           id: 2,
