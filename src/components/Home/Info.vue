@@ -14,7 +14,7 @@
             zorganizowane dla studentów od studentów - czyli przez Samorząd
             Studentów Politechniki Poznańskiej.
           </h2>
-          <br>
+          <br />
           <h2
             class="text-sm-h5 text-md-h5 text-lg-h5 text-xl-h5 text-subtitle-1 headline"
           >
@@ -37,13 +37,21 @@
           </h2>
         </v-col>
       </v-row>
+      <component-text
+        text="W obecnej sytuacji formuła obozu została zmieniona w
+        stosunku do lat poprzednich i dostosowana do wymogów
+        sanitarno-epidemiologicznych, tak aby zapewnić uczestnikom
+        najwyższy standard bezpieczeństwa."
+      />
     </v-container>
   </div>
 </template>
 
 <script>
+import ComponentText from "@/components/ComponentText";
 export default {
-  name: "Info"
+  name: "Info",
+  components: { ComponentText }
 };
 </script>
 

@@ -41,19 +41,18 @@ export default {
   name: "AccommodationGallery",
   data() {
     return {
-      todo: "buttony, każdy otwiera carousel inaczej",
       dialog: false,
-      dialogSrc: "ds2_2.jpg",
+      dialogSrc: "ds4_2.jpg",
       imageIndex: 0,
       orderedImageList: [],
       imageList: [
         {
           id: 0,
-          src: "ds2_1.jpg"
+          src: "ds4_1.jpg"
         },
         {
           id: 1,
-          src: "ds2_2.jpg"
+          src: "ds4_2.jpg"
         },
         {
           id: 2,
