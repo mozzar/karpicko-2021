@@ -36,34 +36,10 @@ export default {
     return {
       partnerList: [
         {
-          src: "question.png"
+          src: "pils.png"
         },
         {
-          src: "question.png"
-        },
-        {
-          src: "question.png"
-        },
-        {
-          src: "question.png"
-        },
-        {
-          src: "question.png"
-        },
-        {
-          src: "question.png"
-        },
-        {
-          src: "question.png"
-        },
-        {
-          src: "question.png"
-        },
-        {
-          src: "question.png"
-        },
-        {
-          src: "question.png"
+          src: "fortuna.jpg"
         }
       ]
     };

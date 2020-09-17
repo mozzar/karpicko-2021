@@ -127,11 +127,6 @@ export default {
           avatar: "Grzesiu.jpg"
         },
         {
-          name: "Agata Pawlik",
-          faculty: "WTCh",
-          avatar: ""
-        },
-        {
           name: "Julia Rogacka",
           faculty: "WA",
           avatar: "Julka.jpeg"
