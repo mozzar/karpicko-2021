@@ -64,7 +64,7 @@ export default {
         {
           name: "Patryk Ginter",
           faculty: "WIMiFT",
-          avatar: ""
+          avatar: "Patryk.jpg"
         },
         {
           name: "Marta Kocurek",

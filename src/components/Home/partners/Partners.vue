@@ -9,7 +9,7 @@
         <v-col cols="12" lg="10" md="10">
           <v-row class="mt-10" align="start" justify="center" no-gutters>
             <v-col
-              cols="4"
+              cols="6"
               lg="2"
               md="3"
               sm="4"
@@ -37,6 +37,9 @@ export default {
       partnerList: [
         {
           src: "pils.png"
+        },
+        {
+          src: "fajowo.png"
         },
         {
           src: "fortuna.jpg"
