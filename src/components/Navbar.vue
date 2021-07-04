@@ -96,9 +96,9 @@ export default {
   name: "Navbar",
   data() {
     return {
-      appTitle: "Karpicko 2020",
+      appTitle: "Karpicko 2021",
       drawer: false,
-      main: { title: "Karpicko 2020", id: "#hero" },
+      main: { title: "Karpicko 2021", id: "#hero" },
       items: [
         { title: "Rekrutacja", id: "#invitation" },
         { title: "Atrakcje", id: "#agenda" },
@@ -106,6 +106,7 @@ export default {
         { title: "Partnerzy", id: "#partners" }
       ],
       pages: [
+        { title: "Strona główna", url: "/" },
         { title: "Kadra", url: "#/kadra" },
         { title: "Regulamin", url: "#/regulamin" },
         { title: "Kontakt", url: "#/kontakt" }
