@@ -100,7 +100,7 @@ export default {
       drawer: false,
       main: { title: "Karpicko 2021", id: "#hero" },
       items: [
-        { title: "Rekrutacja", id: "#invitation" },
+        { title: "Rekrutacja", id: "#invitation"  },
         { title: "Atrakcje", id: "#agenda" },
         { title: "Zakwaterowanie", id: "#accommodation" },
         { title: "Partnerzy", id: "#partners" }
