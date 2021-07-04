@@ -3,12 +3,12 @@
     <v-parallax dark src="@/assets/karpicko_2018_sm.jpg" height="700">
       <v-row align="center" justify="center">
         <v-img
-          src="@/assets/other/Karpicko_White.png"
+          src="@/assets/other/Karpicko_White_Logo_2020.png"
           class="hidden-xs-only"
           max-width="500"
         />
         <v-img
-          src="@/assets/other/Karpicko_White.png"
+          src="@/assets/other/Karpicko_White_Logo_2020.png"
           class="hidden-sm-and-up"
           max-width="330"
         />
